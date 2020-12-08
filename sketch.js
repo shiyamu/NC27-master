@@ -20,18 +20,11 @@ function setup() {
 
 	roof = new Roof();
 	ball1 = new Ball(300,400);
-	ball2 = new Ball(350,400);    
-	ball3 = new Ball(400,400);
-	ball4 = new Ball(450,400);
-	ball5 = new Ball(500,400);
+	//Create till ball5
 
 	//console.log(ball1.ball)
 
-	rope1 = new Rope(ball1.body,roof.body,-100);
-	rope2 = new Rope(ball2.body,roof.body,-50);
-	rope3 = new Rope(ball3.body,roof.body,0);
-	rope5 = new Rope(ball5.body,roof.body,100);
-	rope4 = new Rope(ball4.body,roof.body,50);
+	//Create rope objects
 	
 	Engine.run(engine);
   
@@ -63,6 +56,6 @@ function draw() {
 }
 function keyPressed(){
 	if(keyCode === UP_ARROW){
-		Matter.Body.applyForce(ball1.body,ball1.body.position,{x:-50,y:-50})
+		//use apply force
 	}
 }
