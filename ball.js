@@ -6,6 +6,7 @@ class Ball{
             density : 0.8
         }
     //Use Bodies.circle to create the ball body
+    //radius = 50
     }
     display(){
         //display using ellipse()

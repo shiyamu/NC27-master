@@ -24,8 +24,13 @@ function setup() {
 
 	//console.log(ball1.ball)
 
-	//Create rope objects
-	
+  //Create rope objects
+  rope1 = new Rope(ball1.body,roof.body,-100)
+  rope2 = new Rope(ball2.body,roof.body,-50)
+  rope3 = new Rope(ball3.body,roof.body,0)
+  rope4 = new Rope(ball4.body,roof.body,50)
+  rope5 = new Rope(ball5.body,roof.body,100)
+
 	Engine.run(engine);
   
 }
