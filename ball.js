@@ -5,13 +5,10 @@ class Ball{
             friction : 0.3,
             density : 0.8
         }
-    this.body=Bodies.circle(x,y,25,options);
-    World.add(world,this.body)
+    //Use Bodies.circle to create the ball body
     }
     display(){
-        var pos = this.body.position
-        ellipseMode(RADIUS);
-        ellipse(pos.x,pos.y,25,25);
+        //display using ellipse()
     }
 }
 
